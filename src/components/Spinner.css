@@ -1,0 +1,15 @@
+.custom-loader {
+    --s: 8px;
+    width: 50px;
+    height: 50px;
+    background: #766DF4;
+    border-radius: 50%;
+    animation: s9 2s infinite linear;
+    clip-path: polygon(0 0, calc(50% - var(--s)) 0, 50% var(--s), calc(50% + var(--s)) 0, 100% 0, 100% calc(50% - var(--s)), calc(100% - var(--s)) 50%, 100% calc(50% + var(--s)), 100% 100%, calc(50% + var(--s)) 100%, 50% calc(100% - var(--s)), calc(50% - var(--s)) 100%, 0 100%, 0 calc(50% + var(--s)), var(--s) 50%, 0 calc(50% - var(--s)));
+}
+
+@keyframes s9 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
